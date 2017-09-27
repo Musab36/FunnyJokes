@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/littleJohny"
+            android:layout_marginTop="30dp"
+            android:text="Little Johhny Jokes"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:background="@drawable/falcos" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/loveJokes"
+            android:layout_marginTop="30dp"
+            android:text="Love Jokes"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:background="@drawable/falcos"
+            android:layout_below="@id/littleJohny" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/drunkJokes"
+            android:layout_marginTop="30dp"
+            android:text="Drunk Jokes"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:background="@drawable/falcos"
+            android:layout_below="@+id/loveJokes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/teacherJokes"
+            android:layout_marginTop="30dp"
+            android:text="Teacher Jokes"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:background="@drawable/falcos"
+            android:layout_below="@+id/drunkJokes" />
+    </RelativeLayout>
+
+</LinearLayout>

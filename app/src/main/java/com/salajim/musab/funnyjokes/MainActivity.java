@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_share, menu);
         inflater.inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
     }
@@ -60,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(shareIntent);
             return true;
         }
-        if(id == R.id.menu_main) {
-            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+        if(id == R.id.action_add) {
+            Intent intent = new Intent(MainActivity.this, AddJokeActivity.class);
             startActivity(intent);
             return true;
         }

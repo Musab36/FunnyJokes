@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "749025291449",
+    "firebase_url": "https://funny-jokes-1ef36.firebaseio.com",
+    "project_id": "funny-jokes-1ef36",
+    "storage_bucket": "funny-jokes-1ef36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749025291449:android:4bce6e75033bd9c4",
+        "android_client_info": {
+          "package_name": "com.salajim.musab.funnyjokes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749025291449-7f2161qjivoit7dj5cvh3g3kvk529hhc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salajim.musab.funnyjokes",
+            "certificate_hash": "29a85812aa91016222616cb59927cca314ebcc28"
+          }
+        },
+        {
+          "client_id": "749025291449-aeadlapp35oghadlu1pcn9mmvqpjffo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWOz-j7g111-IK6QbqL5oOpTZxTyY9Rnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749025291449-aeadlapp35oghadlu1pcn9mmvqpjffo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

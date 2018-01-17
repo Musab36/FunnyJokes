@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 
 import butterknife.Bind;
@@ -19,6 +22,8 @@ import butterknife.ButterKnife;
 public class JokesAdapter extends RecyclerView.Adapter<JokesAdapter.JokesViewHolder> {
     private ArrayList<AddJokes> mAddJokes = new ArrayList<>();
     private Context mContext;
+    FirebaseDatabase database;
+    DatabaseReference mRef;
 
     public JokesAdapter(Context context, ArrayList<AddJokes> jokes) {
         mContext = context;

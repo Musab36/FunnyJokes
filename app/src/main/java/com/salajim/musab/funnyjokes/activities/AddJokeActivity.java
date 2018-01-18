@@ -55,7 +55,7 @@ public class AddJokeActivity extends AppCompatActivity implements View.OnClickLi
             String id = databaseAddJokes.push().getKey();
 
             AddJokes addJokes = new AddJokes(id, joke);
-            databaseAddJokes.child(id).setValue(joke);
+            databaseAddJokes.child(id).setValue(addJokes);
 
             mJokeEdittext.setText("");
 

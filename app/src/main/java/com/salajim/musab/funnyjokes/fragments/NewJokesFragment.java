@@ -29,6 +29,7 @@ public class NewJokesFragment extends Fragment {
 
     FirebaseDatabase database;
     DatabaseReference mRef;
+
     private ArrayList<AddJokes> mAddJokes = new ArrayList<>();
     private JokesAdapter mAdapter;
 
@@ -42,6 +43,7 @@ public class NewJokesFragment extends Fragment {
         View view = inflater.inflate(R.layout.new_jokes, container, false);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+
         database = FirebaseDatabase.getInstance();
         mRef = database.getReference("newJokes");
 

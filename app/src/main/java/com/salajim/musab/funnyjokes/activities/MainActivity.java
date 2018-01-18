@@ -1,4 +1,4 @@
-package com.salajim.musab.funnyjokes;
+package com.salajim.musab.funnyjokes.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,12 @@ import android.support.v7.widget.ShareActionProvider;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import com.salajim.musab.funnyjokes.fragments.FavoriteJokesFragment;
+import com.salajim.musab.funnyjokes.fragments.NewJokesFragment;
+import com.salajim.musab.funnyjokes.R;
+import com.salajim.musab.funnyjokes.adapters.SectionsPagerAdapter;
+import com.salajim.musab.funnyjokes.fragments.TopJokesFragment;
 
 
 public class MainActivity extends AppCompatActivity {

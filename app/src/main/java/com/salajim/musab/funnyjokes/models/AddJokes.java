@@ -1,4 +1,4 @@
-package com.salajim.musab.funnyjokes;
+package com.salajim.musab.funnyjokes.models;
 
 /**
  * Created by Musab on 1/18/2018.

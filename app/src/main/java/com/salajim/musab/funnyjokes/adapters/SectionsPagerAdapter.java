@@ -1,4 +1,4 @@
-package com.salajim.musab.funnyjokes;
+package com.salajim.musab.funnyjokes.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

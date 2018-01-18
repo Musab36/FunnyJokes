@@ -1,4 +1,4 @@
-package com.salajim.musab.funnyjokes;
+package com.salajim.musab.funnyjokes.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,6 +14,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.salajim.musab.funnyjokes.R;
+import com.salajim.musab.funnyjokes.adapters.JokesAdapter;
+import com.salajim.musab.funnyjokes.models.AddJokes;
 
 import java.util.ArrayList;
 

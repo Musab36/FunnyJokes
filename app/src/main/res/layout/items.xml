@@ -2,24 +2,51 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         card_view:cardCornerRadius="10dp"
         card_view:cardBackgroundColor="@color/colorPrimaryDark"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="5dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/jokesTextView"
-            android:text="Lmoa so funny!"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jokesTextView"
+                android:text="Lmoa so funny!"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share_white_24dp"
+                android:layout_below="@+id/jokesTextView"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/shareImageView" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_content_copy_white_24dp"
+                android:layout_below="@+id/jokesTextView"
+                android:layout_toRightOf="@+id/shareImageView"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"/>
+
+        </RelativeLayout>
+
 
     </android.support.v7.widget.CardView>
 

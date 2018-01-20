@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new TopJokesFragment(), "Top Jokes");
-        adapter.addFragment(new NewJokesFragment(), "New Jokes");
-        adapter.addFragment(new FavoriteJokesFragment(), "Favorite Jokes");
+        adapter.addFragment(new TopJokesFragment(), "Top");
+        adapter.addFragment(new NewJokesFragment(), "New");
+        adapter.addFragment(new FavoriteJokesFragment(), "Memes");
 
         viewPager.setAdapter(adapter);
     }

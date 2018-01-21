@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.salajim.musab.funnyjokes.fragments.FavoriteJokesFragment;
+import com.salajim.musab.funnyjokes.fragments.VideosFragment;
 import com.salajim.musab.funnyjokes.fragments.NewJokesFragment;
 import com.salajim.musab.funnyjokes.R;
 import com.salajim.musab.funnyjokes.adapters.SectionsPagerAdapter;
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new TopJokesFragment(), "Top");
         adapter.addFragment(new NewJokesFragment(), "New");
-        adapter.addFragment(new FavoriteJokesFragment(), "Videos");
+        adapter.addFragment(new VideosFragment(), "Videos");
 
         viewPager.setAdapter(adapter);
     }

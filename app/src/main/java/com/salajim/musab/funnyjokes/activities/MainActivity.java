@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new TopJokesFragment(), "Top");
         adapter.addFragment(new NewJokesFragment(), "New");
-        adapter.addFragment(new FavoriteJokesFragment(), "Memes");
+        adapter.addFragment(new FavoriteJokesFragment(), "Videos");
 
         viewPager.setAdapter(adapter);
     }

@@ -10,11 +10,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.salajim.musab.funnyjokes.fragments.VideosFragment;
-import com.salajim.musab.funnyjokes.fragments.NewJokesFragment;
 import com.salajim.musab.funnyjokes.R;
 import com.salajim.musab.funnyjokes.adapters.SectionsPagerAdapter;
+import com.salajim.musab.funnyjokes.fragments.NewJokesFragment;
 import com.salajim.musab.funnyjokes.fragments.TopJokesFragment;
+import com.salajim.musab.funnyjokes.fragments.VideosFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new TopJokesFragment(), "Top");
-        adapter.addFragment(new NewJokesFragment(), "New");
+        adapter.addFragment(new NewJokesFragment(), "Jokes");
+        adapter.addFragment(new TopJokesFragment(), "Favorites");
         adapter.addFragment(new VideosFragment(), "Videos");
 
         viewPager.setAdapter(adapter);

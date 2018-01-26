@@ -1,12 +1,14 @@
 package com.salajim.musab.funnyjokes.models;
 
+import org.parceler.Parcel;
+
 /**
  * Created by Musab on 1/18/2018.
  */
-
+@Parcel
 public class AddJokes {
-    private String jokeId;
-    private String joke;
+    String jokeId;
+    String joke;
 
     public AddJokes() {}
 

@@ -23,6 +23,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.salajim.musab.funnyjokes.activities.MainActivity" />
         </activity>
+        <activity android:name=".activities.JokesActivity"></activity>
     </application>
 
 </manifest>

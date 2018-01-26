@@ -2,17 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorPrimary">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
 
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        card_view:cardCornerRadius="10dp"
-        card_view:cardBackgroundColor="@color/colorPrimaryDark"
-        android:layout_marginTop="5dp">
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="30dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -33,7 +34,7 @@
                 android:src="@drawable/ic_share_white_24dp"
                 android:layout_below="@+id/jokesTextView"
                 android:layout_alignParentBottom="true"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="50dp"
                 android:id="@+id/shareImageView" />
 
 
@@ -44,7 +45,7 @@
                 android:layout_below="@+id/jokesTextView"
                 android:layout_toRightOf="@+id/shareImageView"
                 android:layout_alignParentBottom="true"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="60dp"
                 android:id="@+id/heartImageView" />
 
 
@@ -55,7 +56,7 @@
                 android:layout_below="@+id/jokesTextView"
                 android:layout_toRightOf="@+id/heartImageView"
                 android:layout_alignParentBottom="true"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="60dp"
                 android:id="@+id/copyImageView" />
 
 

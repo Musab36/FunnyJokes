@@ -21,8 +21,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class JokesActivity extends AppCompatActivity {
-    @Bind(R.id.viewPager)
-    ViewPager mViewPager;
+    @Bind(R.id.viewPager) ViewPager mViewPager;
     private ArrayList<AddJokes> mAddJokes = new ArrayList<>();
     private PagerAdapter mPagerAdapter;
 

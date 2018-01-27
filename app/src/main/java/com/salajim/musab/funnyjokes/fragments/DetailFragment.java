@@ -1,6 +1,8 @@
 package com.salajim.musab.funnyjokes.fragments;
 
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -22,7 +25,7 @@ import butterknife.ButterKnife;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DetailFragment extends Fragment {
+public class DetailFragment extends Fragment implements View.OnClickListener{
     @Bind(R.id.heartImageView) ImageView mHeartImageView;
     @Bind(R.id.jokesTextView) TextView mJokesTextView;
 
@@ -54,11 +57,19 @@ public class DetailFragment extends Fragment {
 
         mJokesTextView.setText(mAddJokes.getJoke());
 
+        mHeartImageView.setOnClickListener(this);
+
         return view;
     }
 
     public void onClick(View v) {
-
+        if(v == mHeartImageView) {
+            SharedPreferences sharedPref = this.getActivity().getSharedPreferences("favorites", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString("favorites", mAddJokes.getJoke());
+            editor.apply();
+            Toast.makeText(getActivity(), "Joke saved to favorites", Toast.LENGTH_SHORT).show();
+        }
     }
 
 }
